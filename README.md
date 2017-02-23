@@ -11,7 +11,7 @@ const api = {
   version: '0.0.1',
 };
 
-frameApi(api).then((api) => {
+currere(api).then((api) => {
   api.bar('nachos').then((val) => { console.log('and returned: ', val); });
 });
 ```
@@ -25,7 +25,7 @@ const api = {
   }
 };
 
-frameApi(api).then((api) => {
+currere(api).then((api) => {
   api.foo('cheese').then((val) => { console.log('and returned: ', val); });
   console.log('version', api.version)
 });
@@ -40,6 +40,9 @@ foo called with:  cheese
 and returned:  46
 and returned:  undefined
 ```
+
+## Caveats
+All api methods must return a "JSON serializable" value. (i.e. no functions)
 
 ## Why "Currere"?
 "Currere" is a latin word meaning "to run". It is also the word that "courier" (meaning messenger) is derived from. Both "run" (as in run a function) and "messenger" (as in postMessage api) seemed relevant to this project.

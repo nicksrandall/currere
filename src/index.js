@@ -8,7 +8,7 @@ class Deferred {
 }
 
 // TODO: lock down origin
-export default function frameApi(api) {
+export default function frameApi(api = {}) {
   const context = {};
   context.registered = false;
   context.promiseQueue = {};
