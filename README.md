@@ -41,5 +41,5 @@ and returned:  46
 and returned:  undefined
 ```
 
-## Why "Currere"
+## Why "Currere"?
 "Currere" is a latin word meaning "to run". It is also the word that "courier" (meaning messenger) is derived from. Both "run" (as in run a function) and "messenger" (as in postMessage api) seemed relevant to this project.
