@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>page for iframe api</title>
+</head>
+<body>
+	<h2>iFramed page<h2>
+  <script type="text/javascript" src="../dist/frameApi.umd.js"></script>
+  <script>
+		const api = {
+			bar: function (message) {
+				console.log("bar called with: ", message);
+				return 46;
+			}
+		};
+
+		frameApi(api).then((api) => {
+			api.foo('cheese').then((val) => { console.log('and returned: ', val); });
+			console.log('version', api.version)
+		});
+  </script>
+</body>
+</html>

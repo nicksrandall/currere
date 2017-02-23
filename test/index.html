@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>page for iframe api</title>
+</head>
+<body>
+	<h2>Main page<h2>
+  <script type="text/javascript" src="../dist/frameApi.umd.js"></script>
+  <script>
+		const api = {
+			foo: function (message) {
+				console.log("foo called with: ", message);
+			},
+			version: '0.0.1',
+		};
+
+		frameApi(api).then((api) => {
+			api.bar('nachos').then((val) => { console.log('and returned: ', val); });
+		});
+  </script>
+	<iframe src="./page.html" width="500px" height="500px"/>
+</body>
+</html>
