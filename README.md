@@ -1,4 +1,4 @@
-# frameApi
+# Currere
 An easy way to publish an api to communicate with iFrames.
 
 ## Example
@@ -41,3 +41,5 @@ and returned:  46
 and returned:  undefined
 ```
 
+## Why "Currere"
+Currere is a latin word meaning "to run". It is also the word that "courier" (meaning messenger) is derived from. Both "run" (as in run a function) and "messenger" (as in postMessage api) seemed relevant to this project.

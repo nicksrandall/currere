@@ -1,10 +1,10 @@
 {
-  "name": "frameApi",
+  "name": "currere",
   "version": "0.1.0",
   "description": "iFrame api helper.",
   "jsnext:main": "src/index.js",
-  "main": "dist/frameApi.js",
-  "umd:main": "dist/frameApi.umd.js",
+  "main": "dist/currere.js",
+  "umd:main": "dist/currere.umd.js",
   "scripts": {
     "test": "eslint src test && mocha --compilers js:babel-register test/**/*.js",
     "build": "npm-run-all clean -p rollup:* -p minify:* -s size",
