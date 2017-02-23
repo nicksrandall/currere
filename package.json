@@ -1,6 +1,6 @@
 {
   "name": "currere",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "iFrame api helper.",
   "jsnext:main": "src/index.js",
   "main": "dist/currere.js",
