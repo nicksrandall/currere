@@ -1,6 +1,6 @@
 {
   "name": "frameApi",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "iFrame api helper.",
   "jsnext:main": "src/index.js",
   "main": "dist/frameApi.js",
@@ -18,8 +18,7 @@
     "release": "npm run build -s && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "repository": "nicksrandall/fetchApi",
-  "keywords": [
-  ],
+  "keywords": [],
   "homepage": "https://github.com/nicksrandall/fetchApi",
   "authors": [
     "Nick Randall"
