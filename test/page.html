@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h2>iFramed page<h2>
-  <script type="text/javascript" src="../dist/frameApi.umd.js"></script>
+  <script type="text/javascript" src="../dist/currere.umd.js"></script>
   <script>
 		const api = {
 			bar: function (message) {
@@ -16,7 +16,7 @@
 			}
 		};
 
-		frameApi(api).then((api) => {
+		currere(api).then((api) => {
 			api.foo('cheese').then((val) => { console.log('and returned: ', val); });
 			console.log('version', api.version)
 		});

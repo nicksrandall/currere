@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h2>Main page<h2>
-  <script type="text/javascript" src="../dist/frameApi.umd.js"></script>
+  <script type="text/javascript" src="../dist/currere.umd.js"></script>
   <script>
 		const api = {
 			foo: function (message) {
@@ -15,7 +15,7 @@
 			version: '0.0.1',
 		};
 
-		frameApi(api).then((api) => {
+		currere(api).then((api) => {
 			api.bar('nachos').then((val) => { console.log('and returned: ', val); });
 		});
   </script>
